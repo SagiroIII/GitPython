@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from VLIGSJP.views import *
+from VLIGSLog.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,6 +25,18 @@ urlpatterns = [
     path('VentaJuegos/', VentaJuegos),
     path('VentaPeliculas/', VentaPeliculas),
     path('CategoriaPeliculas/', CategoriaPeliculas),
-    path('ClasificacionJuegos/', ClasifiacionJuegos)
+    path('ClasificacionJuegos/', ClasifiacionJuegos),
+    #-----USUARIOS
+    path('CrearUsuario/', CrearUsuario),
+    path('ModificarUsuario/',ModificarUsuario),
+    path('EliminarUsuario/', EliminarUsuario),
+    #----JUEGOS----
+    path('CrearJuego/', CrearJuego),
+    path('ModificarJuego/',ModificarJuego),
+    path('EliminarJuego/', EliminarJuego),
+    #-----PELICULAS---
+    path('CrearPelicula/', CrearPelicula),
+    path('ModificarPelicula/',ModificarPelicula),
+    path('EliminarPelicula/', EliminarPelicula),
 
 ]
