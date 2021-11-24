@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STATICFILES_DIRS=['C:/Users/marti/OneDrive/Documentos/VLIGS3/static']
 
 # Application definition
 

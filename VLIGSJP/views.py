@@ -44,9 +44,8 @@ def ModificarJuego(request):
     return render(request, 'ModificarJuego.html')
 def EliminarJuego(request):
     return render(request, 'EliminarJuego.html')
+#---------------Dashboard Pelicula---------------
+def pelicula(request):
+    return render(request, "pelicula.html")
 
-
-
-
-
-
+# Create your views here.
