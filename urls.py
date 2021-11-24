@@ -41,5 +41,7 @@ urlpatterns = [
     path('CrearPelicula/', CrearPelicula),
     path('ModificarPelicula/',ModificarPelicula),
     path('EliminarPelicula/', EliminarPelicula),
+    #-----Dashboard-----
+    path("dashpelicula", pelicula)
 
 ]
