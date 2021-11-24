@@ -3,6 +3,10 @@ from django.http import HttpResponse
 from django.template import Template, Context
 from django.template.loader import get_template
 
+#PRINCIPAL
+def Principal(request):
+    return render(request, 'Principal.html')
+
 def CrearUsuario(request):
     return render(request, 'CreacionUsuario.html')
 

@@ -19,6 +19,9 @@ from VLIGSJP.views import *
 from VLIGSLog.views import *
 
 urlpatterns = [
+
+    #-----PAGINA PRINCIPAL
+    path('Principal/',Principal),
     path('admin/', admin.site.urls),
     path('CatalogoJuegos/', CatalogoJuegos),
     path('CatalogoPeliculas/', CatalogoPeliculas),
