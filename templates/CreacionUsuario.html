@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-    <meta charset="UTF-8">
-    <title>Creacion de nuevo usuario</title>
-</head>
-<body>
-    <h1> CREA UN NUEVO USUARIO</h1>
 
-</body>
-</html>
+    {% extends "base.html" %}
+    {% block tittle %}USUARIOS{% endblock %}
+
+    {% block titulo %} CREACION DE USUARIOS {% endblock %}
+      #HERENCIA DE BOTONES
+    {% block contenido %}
+
+        <input type="reset" class="btn btn-danger" value="Cancelar" name="Cancelar"/>
+      <input type="submit" class="btn btn-success" value="Crear Usuario"  name="CrearUsuario" />
+    {% endblock %}

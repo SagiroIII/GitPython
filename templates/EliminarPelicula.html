@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Eliminar Pelicual</title>
-</head>
-<body>
-  <h1> Eliminar Pelicula</h1>
 
-</body>
-</html>
+    {% extends "base.html" %}
+    {% block tittle %}Juegos{% endblock %}
+
+    {% block titulo %} ELIMINAR UNA PELICULAS {% endblock %}
+
+    {% block contenido %}
+
+        <input type="reset" class="btn btn-warning" value="Cancelar" name="Cancelar"/>
+        <input type="reset" class="btn btn-info" value="Buscar" name="BuscarPelicula"/>
+        <input type="submit" class="btn btn-danger" value="Eliminar Pelicula"  name="EliminarPelicula" />
+    {% endblock %}

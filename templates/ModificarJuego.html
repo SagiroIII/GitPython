@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Modificar Juego</title>
-</head>
-<body>
-  <h1> EDITAR JUEGO</h1>
 
-</body>
-</html>
+    {% extends "base.html" %}
+    {% block tittle %}Modificar Usuarios{% endblock %}
+
+    {% block titulo %} MODIFICAR USUARIO {% endblock %}
+
+     {% block contenido %}
+
+        <input type="reset" class="btn btn-danger" value="Cancelar" name="Cancelar"/>
+    <input type="reset" class="btn btn-info" value="Buscar" name="BuscarJuego"/>
+      <input type="submit" class="btn btn-success" value="Modificar Juego"  name="ModificarJuego" />
+    {% endblock %}

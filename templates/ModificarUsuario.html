@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Modificar Usuario</title>
-</head>
-<body>
-  <h1> MODIFICACION DE USUARIO</h1>
 
-</body>
-</html>
+    {% extends "base.html" %}
+    {% block tittle %}Modificar Usuario{% endblock %}
+
+    {% block titulo %} MODIFICAR USUARIO {% endblock %}
+    {% block contenido %}
+
+        <input type="reset" class="btn btn-warning" value="Cancelar" name="Cancelar"/>
+        <input type="reset" class="btn btn-info" value="Buscar" name="BuscarUsuario"/>
+        <input type="submit" class="btn btn-success" value="Modificar Usuario"  name="ModificarUsuario" />
+    {% endblock %}

@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Crear Juego</title>
-</head>
-<body>
-  <h1> REGISTRAR UN NUEVO JUEGO</h1>
 
-</body>
-</html>
+    {% extends "base.html" %}
+    {% block tittle %}Juegos{% endblock %}
+
+    {% block titulo %} REGISTRAR JUEGOS {% endblock %}
+
+    #HERENCIA DE BOTONES
+    {% block contenido %}
+
+        <input type="reset" class="btn btn-danger" value="Cancelar" name="CancelarRegistro"/>
+      <input type="submit" class="btn btn-success" value="Registrar Juego"  name="RegistrarJuego" />
+    {% endblock %}
+
+

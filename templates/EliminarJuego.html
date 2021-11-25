@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Eliminar Juego</title>
-</head>
-<body>
-    <h1> ELIMINAR JUEGO</h1>
 
-</body>
-</html>
+    {% extends "base.html" %}
+    {% block tittle %}Eliminar Juego{% endblock %}
+
+    {% block titulo %} ELIMINAR JUEGO {% endblock %}
+
+    {% block contenido %}
+
+        <input type="reset" class="btn btn-warning" value="Cancelar" name="Cancelar"/>
+    <input type="reset" class="btn btn-info" value="Buscar" name="BuscarJuego"/>
+      <input type="submit" class="btn btn-danger" value="Eliminar Juego"  name="EliminarJuego" />
+    {% endblock %}

@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Crear Pelicula</title>
-</head>
-<body>
-    <h1> REGISTRAR NUEVA PELICULA</h1>
 
-</body>
-</html>
+    {% extends "base.html" %}
+    {% block tittle %}Peliculas{% endblock %}
+
+    {% block titulo %} REGISTRAR PELICULAS {% endblock %}
+
+    {% block contenido %}
+
+    <input type="reset" class="btn btn-danger" value="Cancelar" name="Cancelar"/>
+    <input type="submit" class="btn btn-success" value="Crear Pelicula"  name="CrearPelicula" />
+    {% endblock %}

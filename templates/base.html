@@ -9,6 +9,9 @@
     <link href="{% static '/base.css' %}" rel="stylesheet">
     <!-- Boxiocns CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -19,9 +22,9 @@
     </div>
     <ul class="nav-links">
       <li>
-        <a href="#">
+        <a href="Principal/">
           <i class='bx bx-grid-alt' ></i>
-          <span class="link_name">Dashboard</span>
+          <span class="link_name">Pantalla Principal</span>
         </a>
         <ul class="sub-menu blank">
           <li><a class="link_name" href="#">Category</a></li>
@@ -37,9 +40,9 @@
         </div>
         <ul class="sub-menu">
           <li><a class="link_name" href="#">Category</a></li>
-          <li><a href="#">Agregar película</a></li>
-          <li><a href="#">Modificar película</a></li>
-          <li><a href="#">Eliminar película</a></li>
+          <li><a href="CrearPelicula/">Agregar película</a></li>
+          <li><a href="ModificarPelicula/">Modificar película</a></li>
+          <li><a href="EliminarPelicula/">Eliminar película</a></li>
         </ul>
       </li>
       <li>
@@ -52,18 +55,23 @@
         </div>
         <ul class="sub-menu">
           <li><a class="link_name" href="#">Posts</a></li>
-          <li><a href="#">Nuevo juego</a></li>
-          <li><a href="#">Modificar juego</a></li>
-          <li><a href="#">Eliminar juego</a></li>
+          <li><a href="CrearJuego/">Nuevo juego</a></li>
+          <li><a href="ModificarJuego/">Modificar juego</a></li>
+          <li><a href="EliminarJuego/">Eliminar juego</a></li>
         </ul>
       </li>
       <li>
-        <a href="#">
-          <i class='bx bx-pie-chart-alt-2' ></i>
-          <span class="link_name">Analytics</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Analytics</a></li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Ventas</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Posts</a></li>
+          <li><a href="VentaJuegos/">Venta de Juegos</a></li>
+          <li><a href="VentaPeliculas/">Venta de peliculas</a></li>
         </ul>
       </li>
       <li>
@@ -76,38 +84,12 @@
         </div>
         <ul class="sub-menu">
           <li><a class="link_name" href="#">Plugins</a></li>
-          <li><a href="#">Nuevo usuario</a></li>
-          <li><a href="#">Modificar usuario</a></li>
-          <li><a href="#">Eliminar usuario</a></li>
+          <li><a href="CrearUsuario">Nuevo usuario</a></li>
+          <li><a href="ModificarUsuario">Modificar usuario</a></li>
+          <li><a href="#EliminarUsuario">Eliminar usuario</a></li>
         </ul>
       </li>
-      <li>
-        <a href="#">
-          <i class='bx bx-compass' ></i>
-          <span class="link_name">Explore</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Explore</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">
-          <i class='bx bx-history'></i>
-          <span class="link_name">History</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">History</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">
-          <i class='bx bx-cog' ></i>
-          <span class="link_name">Setting</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Setting</a></li>
-        </ul>
-      </li>
+
       <li>
     <div class="profile-details">
       <div class="profile-content">
@@ -125,8 +107,17 @@
   <section class="home-section">
     <div class="home-content">
       <i class='bx bx-menu' ></i>
-      <span class="text">Drop Down Sidebar</span>
+      <span class="text">ABRIR MENU</span>
     </div>
+    <div class="sales-boxes">
+       <div class="recent-sales box">
+       <div class="title"> {% block titulo %} {% endblock%}</div>
+        <div class="sales-details" align="center">
+          {% block contenido %}    {% endblock %}
+        </div>
+      </div>
+    </div>
+
   </section>
   <script>
   let arrow = document.querySelectorAll(".arrow");
