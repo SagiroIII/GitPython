@@ -21,7 +21,9 @@ from VLIGSLog.views import *
 urlpatterns = [
 
     #-----PAGINA PRINCIPAL
-    path('Principal/',Principal),
+    path('Principal/', Principal),
+    path('InicioSesion/', InicioSesion),
+
     path('admin/', admin.site.urls),
     path('CatalogoJuegos/', CatalogoJuegos),
     path('CatalogoPeliculas/', CatalogoPeliculas),
@@ -41,7 +43,6 @@ urlpatterns = [
     path('CrearPelicula/', CrearPelicula),
     path('ModificarPelicula/',ModificarPelicula),
     path('EliminarPelicula/', EliminarPelicula),
-    #-----Dashboard-----
-    path("dashpelicula", pelicula)
+
 
 ]
