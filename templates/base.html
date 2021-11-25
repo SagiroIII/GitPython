@@ -6,18 +6,21 @@
     <title>
         {% block tittle %} {% endblock %}
         </title>
-    <link href="{% static '/base.css' %}" rel="stylesheet">
+    <link href="{% static '/base.css' %}" rel="stylesheet"
+          th:href="@{% static '/base.css' %}">
     <!-- Boxiocns CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
-     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
     <div class="sidebar close">
     <div class="logo-details">
-      <i class='bx bxl-c-plus-plus'></i>
+      <i class='bx bxs-game'></i>
       <span class="logo_name">VLIGS</span>
     </div>
     <ul class="nav-links">
@@ -27,19 +30,19 @@
           <span class="link_name">Pantalla Principal</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Category</a></li>
+          <li><a class="link_name" href="#">Principal</a></li>
         </ul>
       </li>
       <li>
         <div class="iocn-link">
           <a href="#">
-            <i class='bx bx-collection' ></i>
+            <i class='bx bx-movie' ></i>
             <span class="link_name">Películas</span>
           </a>
           <i class='bx bxs-chevron-down arrow' ></i>
         </div>
         <ul class="sub-menu">
-          <li><a class="link_name" href="#">Category</a></li>
+          <li><a class="link_name" href="#">Películas</a></li>
           <li><a href="CrearPelicula/">Agregar película</a></li>
           <li><a href="ModificarPelicula/">Modificar película</a></li>
           <li><a href="EliminarPelicula/">Eliminar película</a></li>
@@ -48,13 +51,13 @@
       <li>
         <div class="iocn-link">
           <a href="#">
-            <i class='bx bx-book-alt' ></i>
+            <i class='bx bxs-ghost' ></i>
             <span class="link_name">Juegos</span>
           </a>
           <i class='bx bxs-chevron-down arrow' ></i>
         </div>
         <ul class="sub-menu">
-          <li><a class="link_name" href="#">Posts</a></li>
+          <li><a class="link_name" href="#">Juegos</a></li>
           <li><a href="CrearJuego/">Nuevo juego</a></li>
           <li><a href="ModificarJuego/">Modificar juego</a></li>
           <li><a href="EliminarJuego/">Eliminar juego</a></li>
@@ -63,13 +66,13 @@
       <li>
         <div class="iocn-link">
           <a href="#">
-            <i class='bx bx-book-alt' ></i>
+            <i class='bx bx-dollar bx-flip-horizontal bx-tada' style='color:rgba(173,80,80,0.91)'  ></i>
             <span class="link_name">Ventas</span>
           </a>
           <i class='bx bxs-chevron-down arrow' ></i>
         </div>
         <ul class="sub-menu">
-          <li><a class="link_name" href="#">Posts</a></li>
+          <li><a class="link_name" href="#">Ventas</a></li>
           <li><a href="VentaJuegos/">Venta de Juegos</a></li>
           <li><a href="VentaPeliculas/">Venta de peliculas</a></li>
         </ul>
@@ -77,13 +80,13 @@
       <li>
         <div class="iocn-link">
           <a href="#">
-            <i class='bx bx-plug' ></i>
+            <i class='bx bx-user bx-tada' style='color:rgba(226,223,69,0.91)' ></i>
             <span class="link_name">Usuarios</span>
           </a>
           <i class='bx bxs-chevron-down arrow' ></i>
         </div>
         <ul class="sub-menu">
-          <li><a class="link_name" href="#">Plugins</a></li>
+          <li><a class="link_name" href="#">Usuarios</a></li>
           <li><a href="CrearUsuario">Nuevo usuario</a></li>
           <li><a href="ModificarUsuario">Modificar usuario</a></li>
           <li><a href="#EliminarUsuario">Eliminar usuario</a></li>
