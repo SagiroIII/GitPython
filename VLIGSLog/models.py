@@ -4,8 +4,10 @@ from django.db import models
 
 #USUARIOS PARA LOGIN
 class Usuarios (models.Model):
+    Usuario = models.CharField(max_length=15)
     Nombre = models.CharField(max_length=50)
     Apellido = models.CharField(max_length=50)
-    Contra = models.CharField(max_length=20)
+    Correo = models.EmailField()
+    Contraseña = models.CharField(max_length=20)
 
 

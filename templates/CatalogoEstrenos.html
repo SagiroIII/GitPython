@@ -1,0 +1,15 @@
+
+    {% extends "base.html" %}
+    {% block tittle %}Catalogo Estrenos{% endblock %}
+
+    {% block titulo %} CATALOGO DE ESTRENOS {% endblock %}
+
+    {% block contenido %}
+        <form  action="" method="POST"> {% csrf_token %}
+          <p></p>
+      </form>
+        <table>
+        {{catalogoestrenos.values_list.values}}
+        </table>
+
+    {% endblock %}

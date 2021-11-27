@@ -3,3 +3,12 @@
     {% block tittle %}Juegos{% endblock %}
 
     {% block titulo %} CATALOGO DE JUEGOS {% endblock %}
+ {% block contenido %}
+      <form  action="" method="POST"> {% csrf_token %}
+          <p></p>
+      </form>
+     <table>
+        {{catalogojuegos.values_list.values}}
+     </table>
+
+    {% endblock %}

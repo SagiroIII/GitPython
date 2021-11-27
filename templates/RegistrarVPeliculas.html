@@ -1,0 +1,17 @@
+
+    {% extends "base.html" %}
+    {% block tittle %}Peliculas{% endblock %}
+
+    {% block titulo %} REGISTRAR VENTA DE PELICULAS {% endblock %}
+
+    {% block contenido %}
+        <p></p>
+        <form action="" method="POST"> {% csrf_token %}
+            <table>
+                    {{form3.as_table}}
+            </table>
+            <p></p>
+            <input type="reset" class="btn btn-secondary" value="Cancelar" name="Cancelar"/>
+              <input type="submit" formmethod="post" formaction="" class="btn btn-success" value="Registrar Película" name="CrearPelicula" />
+          </form>
+    {% endblock %}

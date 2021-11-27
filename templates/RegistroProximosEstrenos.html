@@ -1,0 +1,16 @@
+
+    {% extends "base.html" %}
+    {% block tittle %}REGISTRO ESTRENOS{% endblock %}
+
+    {% block titulo %} REGISTRAR PROXIMO ESTRENO {% endblock %}
+
+    {% block contenido %}
+        <form action="" method="POST"> {% csrf_token %}
+            <table>
+                {{form10.as_table}}
+            </table>
+            <p></p>
+            <input type="reset" class="btn btn-danger" value="Cancelar" name="Cancelar"/>
+              <input type="submit" formmethod="post" formaction="" class="btn btn-success" value="Registrar Estreno" name="CrearEstreno" />
+          </form>
+    {% endblock %}

@@ -1,10 +1,14 @@
 
     {% extends "base.html" %}
-    {% block tittle %}Venta de Juegos{% endblock %}
+    {% block tittle %}Juegos{% endblock %}
 
-    {% block titulo %} VENTA DE JUEGOS {% endblock %}
+    {% block titulo %} VENTAS DE JUEGOS REALIZADAS {% endblock %}
 
     {% block contenido %}
-
-        <H2>ESTOS SON LOS JUEGOS QUE HAN SIDO SELECCIONADOS POR LOS USUARIOS</H2>
+        <form action="" method="POST"> {% csrf_token %}
+            <table>
+                  {{juegosvendidos.values_list.values}}
+            </table>
+            <p></p>
+          </form>
     {% endblock %}

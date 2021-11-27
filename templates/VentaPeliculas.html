@@ -1,9 +1,14 @@
 
     {% extends "base.html" %}
-    {% block tittle %}Venta de Peliculas{% endblock %}
+    {% block tittle %}Peliculas{% endblock %}
 
-    {% block titulo %} VENTA DE PELICULAS {% endblock %}
+    {% block titulo %} VENTAS DE PELICULAS REALIZADAS {% endblock %}
+
     {% block contenido %}
-
-        <H2>ESTAS SON LAS PELICULAS QUE HAN SIDO SELECCIONADOS POR LOS USUARIOS</H2>
+        <form action="" method="POST"> {% csrf_token %}
+            <table>
+                  {{peliculasvendidas.values_list.values}}
+            </table>
+            <p></p>
+          </form>
     {% endblock %}
