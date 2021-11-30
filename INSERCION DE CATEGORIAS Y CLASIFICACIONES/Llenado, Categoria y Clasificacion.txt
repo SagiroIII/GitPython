@@ -1,0 +1,22 @@
+INSERT INTO vligsjp_categoriajuegos VALUES (1,"Accion"); 
+INSERT INTO vligsjp_categoriajuegos VALUES (2,"Aventura"); 
+INSERT INTO vligsjp_categoriajuegos VALUES (3,"Terror"); 
+INSERT INTO vligsjp_categoriajuegos VALUES (4,"Disparos"); 
+INSERT INTO vligsjp_categoriajuegos VALUES (5,"Estrategia"); 
+INSERT INTO vligsjp_categoriajuegos VALUES (6,"Deportes"); 
+
+INSERT INTO vligsjp_clasificacionjuegos VALUES (1,"A"); 
+INSERT INTO vligsjp_clasificacionjuegos VALUES (2,"B"); 
+INSERT INTO vligsjp_clasificacionjuegos VALUES (3,"B15"); 
+INSERT INTO vligsjp_clasificacionjuegos VALUES (4,"C"); 
+INSERT INTO vligsjp_clasificacionjuegos VALUES (5,"D"); 
+
+INSERT INTO vligsjp_categoriapeliculas VALUES (1,"Accion"); 
+INSERT INTO vligsjp_categoriapeliculas VALUES (2,"Aventura"); 
+INSERT INTO vligsjp_categoriapeliculas VALUES (3,"Terror"); 
+INSERT INTO vligsjp_categoriapeliculas VALUES (4,"Comedia"); 
+INSERT INTO vligsjp_categoriapeliculas VALUES (5,"Ciencia Ficcion"); 
+INSERT INTO vligsjp_categoriapeliculas VALUES (6,"Fantasia"); 
+INSERT INTO vligsjp_categoriapeliculas VALUES (7,"Documental"); 
+INSERT INTO vligsjp_categoriapeliculas VALUES (8,"Drama");
+INSERT INTO vligsjp_categoriapeliculas VALUES (9,"Musical");

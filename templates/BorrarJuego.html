@@ -1,10 +1,11 @@
 
     {% extends "base.html" %}
+    {% load static %}
     {% block tittle %}Borrar{% endblock %}
 
     {% block titulo %} BORRAR JUEGO {% endblock %}
-      #HERENCIA DE BOTONES
+
     {% block contenido %}
-         <h2> SE BORRO EL JUEGO</h2>
-        
+        <h2> SE BORRO EL JUEGO</h2>
+        <img src="{% static "img/creado.png" %}" height="300">
     {% endblock %}

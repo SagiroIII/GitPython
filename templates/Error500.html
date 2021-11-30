@@ -1,13 +1,15 @@
 
     {% extends "base.html" %}
+    {% load static %}
     {% block tittle %}Error500{% endblock %}
 
     {% block titulo %} Ups.. Error 500 {% endblock %}
 
        {% block contenido %}
         <h1> La direccion no a sido encontrada en el servidor!</h1>
-        <img src="\static\error500.jpg">
+        <img src="{% static "img/error500.jpg" %}" alt="500">
     {% endblock %}
+
 
 
 

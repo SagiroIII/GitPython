@@ -1,10 +1,12 @@
 
     {% extends "base.html" %}
+    {% load static %}
     {% block tittle %}Juegos{% endblock %}
 
     {% block titulo %}REGISTRAR JUEGO{% endblock %}
 
     {% block contenido %}
          <h2> EL JUEGO SE A CREADO CORRECTAMENTE</h2>
-
+        <img src="{% static "img/creado.png" %}" height="300">
     {% endblock %}
+

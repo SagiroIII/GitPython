@@ -1,10 +1,12 @@
 
     {% extends "base.html" %}
+    {% load static %}
     {% block tittle %}USUARIOS{% endblock %}
 
     {% block titulo %} CREACION DE USUARIOS {% endblock %}
       #HERENCIA DE BOTONES
     {% block contenido %}
          <h2> SE GUARDO EL ESTRENO</h2>
+         <img src="{% static "img/creado.png" %}" height="300">
         
     {% endblock %}

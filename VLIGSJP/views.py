@@ -74,7 +74,7 @@ def CrearJuego(request):
 
         if formulario.is_valid():
             titulo = formulario.cleaned_data.get("Titulo", "")
-            categoria = formulario.cleaned_data.get("Categoria", "")
+            categoria = formulario.cleaned_data.get("Categoria","" )
             descripcion = formulario.cleaned_data.get("Descripcion", "")
             clasificacion = formulario.cleaned_data.get("Clasificacion", "")
             fecha = formulario.cleaned_data.get("Fecha", "")

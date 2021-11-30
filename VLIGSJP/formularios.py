@@ -3,7 +3,7 @@ from django import forms
 #Formulario para Eliminar Peliculas
 class FormularioPeliculas(forms.Form):
     Titulo = forms.CharField()
-    Categoria = forms.CharField(required=False)
+    Categoria = forms.IntegerField(required=False)
     Descripcion = forms.CharField(required=False)
     Duracion = forms.IntegerField(required=False)
     Fecha = forms.CharField(required=False)
@@ -21,7 +21,7 @@ class FormularioPeliculas3(forms.Form):
     # Formulario para Agregar Peliculas
 class FormularioPeliculas2(forms.Form):
     Titulo = forms.CharField()
-    Categoria = forms.CharField()
+    Categoria = forms.IntegerField()
     Descripcion = forms.CharField()
     Duracion = forms.IntegerField()
     Fecha = forms.CharField()
@@ -31,7 +31,7 @@ class FormularioPeliculas2(forms.Form):
 class FormularioJuegos(forms.Form):
    # id = forms.IntegerField(required=False, disabled=False)
     Titulo = forms.CharField()
-    Categoria = forms.CharField(required=False)
+    Categoria = forms.IntegerField(required=False)
     Descripcion = forms.CharField(required=False)
     Clasificacion = forms.CharField(required=False)
     Fecha = forms.CharField(required=False)
@@ -39,14 +39,14 @@ class FormularioJuegos(forms.Form):
 
 #Formulario para agregar juego
 class FormularioJuegos2(forms.Form):
-   # id = forms.IntegerField(required=False, disabled=False)
     Titulo = forms.CharField()
-    Categoria = forms.CharField()
+    Categoria = forms.IntegerField()
     Descripcion = forms.CharField()
-    Clasificacion = forms.CharField()
+    Clasificacion = forms.IntegerField()
     Fecha = forms.CharField()
     Precio = forms.FloatField()
 
+#REGISTRAR VENTA DE JUEGO
 class FormularioJuegos3(forms.Form):
    # id = forms.IntegerField(required=False, disabled=False)
     Precio = forms.FloatField()

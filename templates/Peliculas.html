@@ -1,10 +1,12 @@
 
     {% extends "base.html" %}
+    {% load static %}
     {% block tittle %}Peliculas{% endblock %}
 
     {% block titulo %}REGISTRAR PELICULA{% endblock %}
 
     {% block contenido %}
          <h2>LA PELICULA SE A CREADO CORRECTAMENTE</h2>
+         <img src="{% static "img/creado.png" %}" height="300">
 
     {% endblock %}
