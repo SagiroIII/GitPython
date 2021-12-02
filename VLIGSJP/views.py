@@ -46,7 +46,7 @@ def CrearPelicula(request):
             fecha = formulario.cleaned_data.get("Fecha", "")
             precio = formulario.cleaned_data.get("Precio", "")
 
-            insert =CatPeliculas(Titulo=titulo, Categoria=categoria, Descripcion=descripcion,Duracion=duracion, Fecha=fecha, Precio=precio)
+            insert =CatPeliculas(Titulo=titulo, Categoria_id=categoria, Descripcion=descripcion,Duracion=duracion, Fecha=fecha, Precio=precio)
             insert.save()
         return render(request,"Peliculas.html")
     else:
@@ -80,8 +80,8 @@ def CrearJuego(request):
             fecha = formulario.cleaned_data.get("Fecha", "")
             precio = formulario.cleaned_data.get("Precio", "")
 
-            insert = CatJuegos(Titulo=titulo, Categoria=categoria, Descripcion=descripcion,
-                                  Clasificacion=clasificacion, Fecha=fecha, Precio=precio)
+            insert = CatJuegos(Titulo=titulo, Categoria_id=categoria, Descripcion=descripcion,
+                               Clasificacion_id=clasificacion, Fecha=fecha, Precio=precio)
             insert.save()
         return render(request, "Juegos.html")
     else:
