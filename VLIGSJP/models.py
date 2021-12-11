@@ -7,13 +7,22 @@ from django.db import models
 class CategoriaPeliculas(models.Model):
     TipoCategoria = models.CharField(max_length=20)
 
+    def __str__(self):
+        return self.TipoCategoria
+
 
 class ClasificacionJuegos(models.Model):
     TipoClasificacion = models.CharField(max_length=20)
 
+    def __str__(self):
+        return self.TipoClasificacion
+
 
 class CategoriaJuegos(models.Model):
     TipoCategoria = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.TipoCategoria
 
 
 class Estrenos(models.Model):
