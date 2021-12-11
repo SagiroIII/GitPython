@@ -4,11 +4,28 @@
 
     {% block titulo %} VENTAS DE PELICULAS REALIZADAS {% endblock %}
 
-    {% block contenido %}
-        <form action="" method="POST"> {% csrf_token %}
-            <table>
-                  {{peliculasvendidas.values_list.values}}
-            </table>
-            <p></p>
-          </form>
-    {% endblock %}
+{% block contenido %}
+    <table class="table table-hover">
+        <thead>
+            <tr>
+              <th scope="col">Título</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Nombre del cliente</th>
+              <th scope="col">Correo del cliente</th>
+              <th scope="col">Fecha de compra</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for catalogo in catalogos %}
+            <tr>
+              <th scope="row">{{ catalogo.Titulo }}</th>
+              <td>{{ catalogo.Precio}}</td>
+              <td>{{ catalogo.NombreCliente }}</td>
+              <td>{{ catalogo.CorreoCliente }}</td>
+              <td>{{ catalogo.FechaCompra }}</td>
+            </tr>
+            <tr>
+        </tbody>
+        {% endfor %}
+    </table>
+{% endblock %}

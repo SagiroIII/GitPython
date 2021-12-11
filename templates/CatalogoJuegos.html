@@ -4,11 +4,31 @@
 
     {% block titulo %} CATALOGO DE JUEGOS {% endblock %}
  {% block contenido %}
-      <form  action="" method="POST"> {% csrf_token %}
-          <p></p>
-      </form>
-     <table>
-        {{catalogojuegos.values_list.values}}
-     </table>
-
-    {% endblock %}
+    <table class="table table-hover">
+        <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Título</th>
+              <th scope="col">Categoría</th>
+              <th scope="col">Descripción</th>
+              <th scope="col">Clasificación</th>
+              <th scope="col">Fecha</th>
+              <th scope="col">Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for catalogo in catalogos %}
+            <tr>
+              <th scope="row">{{ catalogo.id }}</th>
+              <td>{{ catalogo.Titulo }}</td>
+              <td>{{ catalogo.Categoria}}</td>
+              <td>{{ catalogo.Descripcion }}</td>
+              <td>{{ catalogo.Clasificacion}}</td>
+              <td>{{ catalogo.Fecha}}</td>
+              <td>{{ catalogo.Precio}}</td>
+            </tr>
+            <tr>
+        </tbody>
+        {% endfor %}
+    </table>
+ {% endblock %}
