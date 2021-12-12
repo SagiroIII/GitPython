@@ -1,0 +1,1 @@
+web: gunicorn VLIGS.wsgi --log-file -
